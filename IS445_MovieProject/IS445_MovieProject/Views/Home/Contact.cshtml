@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<Center>
+    <@{
+         ViewBag.Title = "Contact Page";
+     }
+     <div class="ContactImage">
+         <h1><font size="18"> @ViewBag.Message</font></h1>
+    <h2></h2>
+</Center>
+
+    <div id="ContactFormTextBoxes">
+
+            <center>
+
+
+                <p><b>First Name  </b> <center><label> <input type="text" /></label></center></p>
+                <p><b>Last Name  </b><center><label><input type="text" /></label></center></p>
+                <p><b> Phone Number </b><center><label><input type="text" /></label></center></p>
+                <p><b>Email</b><center><label><input type="text" /></label></center></p>
+                <p><b>Age</b><center><label><input type="text" /></label></center></p>
+                <p><b>Password</b><center><label> <input type="password" /></label></center></p>
+                <p><b>Password 2</b><center><label><input type="password" /></label></center></p>
+                <p><Center><label>I am at least 18 years old  <input type="checkbox" onclick="hideFunction()" /></label></Center></p>
+                <div id="hideTextBox"><p><b>How old are you?</b><center><label><input id="HiddenHowOld" input type="text" /></label></center></p></div>
+                <p><label>Agree to terms? Yes <input type="radio" /> No <input type="radio" /></label></p>
+                <p><label>Submit <input type="submit" /></label></p>
+            </center>
+        </div>
+    <script>
+        function hideFunction() {
+            var x = document.getElementById("hideTextBox");
+            {
+                x.style.display = "none";
+            }
+        }
+    </script>
+
+   
+
+
+
+    <!-->
+        <address>
+            One Microsoft Way<br />
+            Redmond, WA 98052-6399<br />
+            <abbr title="Phone">P:</abbr>
+
+        425.555.0100
+    </address>
+
+    <address>
+        <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
+        <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
+    </address> </!-->

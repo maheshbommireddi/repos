@@ -1,0 +1,70 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sprint Zero", "Sprint Zero\Sprint Zero.csproj", "{932A3EFF-5B87-4824-9678-874955E0D0AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SprintZero.Core", "SprintZero.Core\SprintZero.Core.csproj", "{074662B3-B33B-44EE-A159-564C243E86A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SprintZero.DataService", "SprintZero.DataService\SprintZero.DataService.csproj", "{2BE311C2-111B-4A1D-BE49-899F74A17D00}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SprintZero.BusinessService", "SprintZero.BusinessService\SprintZero.BusinessService.csproj", "{12CDF3D4-554E-4570-B404-358CDC8310B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SprintZero.UnitTesting.Tests", "SprintZero.UnitTesting.Tests\SprintZero.UnitTesting.Tests.csproj", "{66362870-C641-4306-94DC-179213B78155}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{932A3EFF-5B87-4824-9678-874955E0D0AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{932A3EFF-5B87-4824-9678-874955E0D0AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{932A3EFF-5B87-4824-9678-874955E0D0AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{932A3EFF-5B87-4824-9678-874955E0D0AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{074662B3-B33B-44EE-A159-564C243E86A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{074662B3-B33B-44EE-A159-564C243E86A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{074662B3-B33B-44EE-A159-564C243E86A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{074662B3-B33B-44EE-A159-564C243E86A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BE311C2-111B-4A1D-BE49-899F74A17D00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BE311C2-111B-4A1D-BE49-899F74A17D00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BE311C2-111B-4A1D-BE49-899F74A17D00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BE311C2-111B-4A1D-BE49-899F74A17D00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12CDF3D4-554E-4570-B404-358CDC8310B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12CDF3D4-554E-4570-B404-358CDC8310B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12CDF3D4-554E-4570-B404-358CDC8310B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12CDF3D4-554E-4570-B404-358CDC8310B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66362870-C641-4306-94DC-179213B78155}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66362870-C641-4306-94DC-179213B78155}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66362870-C641-4306-94DC-179213B78155}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66362870-C641-4306-94DC-179213B78155}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6292ED05-D903-4D29-9B34-DCA7C8A6E789}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://wkfs-scsu-g1.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Sprint\u0020Zero\\Sprint\u0020Zero.csproj
+		SccProjectName1 = Sprint\u0020Zero
+		SccLocalPath1 = Sprint\u0020Zero
+		SccProjectUniqueName2 = SprintZero.Core\\SprintZero.Core.csproj
+		SccProjectName2 = SprintZero.Core
+		SccLocalPath2 = SprintZero.Core
+		SccProjectUniqueName3 = SprintZero.DataService\\SprintZero.DataService.csproj
+		SccProjectName3 = SprintZero.DataService
+		SccLocalPath3 = SprintZero.DataService
+		SccProjectUniqueName4 = SprintZero.BusinessService\\SprintZero.BusinessService.csproj
+		SccProjectName4 = SprintZero.BusinessService
+		SccLocalPath4 = SprintZero.BusinessService
+		SccProjectUniqueName5 = SprintZero.UnitTesting.Tests\\SprintZero.UnitTesting.Tests.csproj
+		SccProjectName5 = SprintZero.UnitTesting.Tests
+		SccLocalPath5 = SprintZero.UnitTesting.Tests
+	EndGlobalSection
+EndGlobal

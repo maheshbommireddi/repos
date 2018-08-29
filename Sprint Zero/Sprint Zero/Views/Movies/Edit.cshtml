@@ -1,0 +1,107 @@
+﻿@model Sprint_Zero.Models.Movies
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Edit</h2>
+
+
+@using (Html.BeginForm("Edit", "Movies", null, FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+<div class="form-horizontal">
+    <h4>Movies</h4>
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    @Html.HiddenFor(model => model.Id)
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Movie, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Movie, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.Movie, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Genre, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.DropDownList("Genre", new List<SelectListItem>  {
+       new SelectListItem {Text="Action",Value="Action"},
+       new SelectListItem {Text="Drama",Value="Drama"},
+       new SelectListItem {Text="Romance",Value="Romance"},
+       new SelectListItem {Text="Comedy",Value="Comedy"},
+       new SelectListItem {Text="Sci-Fi",Value="Sci-Fi"},
+       new SelectListItem {Text="Horror",Value="Horror"},
+       new SelectListItem {Text="Thriller",Value="Thriller"},
+       new SelectListItem {Text="Mystery",Value="Mystery"},
+       new SelectListItem {Text="Crime",Value="Crime"},
+       new SelectListItem {Text="Animation",Value="Animation"},
+       new SelectListItem {Text="Adventure",Value="Adventure"},
+       new SelectListItem {Text="Fantacy",Value="Fantacy"},
+       new SelectListItem {Text="Comedy-Romance",Value="Comedy-Romance"},
+       new SelectListItem {Text="Animation",Value="Animation"},
+       new SelectListItem {Text="Action-Comedy",Value="Action-Comedy"},
+       new SelectListItem {Text="SuperHero",Value="SuperHero"},
+    }, "Select Genre", new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.Genre, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.ReleaseDate, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.ReleaseDate, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.ReleaseDate, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Price, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Price, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.Price, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(model => model.Poster, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+
+            @if (Model.Poster != null)
+            {
+                var base64 = Convert.ToBase64String(Model.Poster);
+                var imgSrc = String.Format("data:image/gif;base64,{0}", base64);
+                <img src='@imgSrc' style="max-width:100px; max-height:100px;" />
+            }
+            <input type="file" id="Poster" name="Poster" />
+            @Html.ValidationMessageFor(model => model.Poster, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.url, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.url, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.url, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Save" class="btn btn-default" />
+        </div>
+    </div>
+</div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
